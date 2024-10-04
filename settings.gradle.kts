@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "XPlanForHyper"
+rootProject.name = "XSamsung"
 include(":app")

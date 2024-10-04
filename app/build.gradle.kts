@@ -4,22 +4,22 @@ plugins {
 }
 
 android {
-    namespace = "com.itos.xplanforhyper"
+    namespace = "com.itos.xsamsung"
     compileSdk = 34
     applicationVariants.all {
         outputs.all {
             val ver = defaultConfig.versionName+"(${defaultConfig.versionCode})"
 
             (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName =
-                "XHpyer_$ver.apk"
+                "XSamsung_$ver.apk"
         }
     }
     defaultConfig {
-        applicationId = "com.itos.xplanforhyper"
+        applicationId = "com.itos.xsamsung"
         minSdk = 26
         targetSdk = 34
-        versionCode = 5
-        versionName = "1.1"
+        versionCode = 1
+        versionName = "1.0"
 
 //        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -72,17 +72,17 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation("androidx.activity:activity-compose:1.9.2")
+    implementation(platform("androidx.compose:compose-bom:2024.09.03"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.navigation:navigation-compose:2.7.6")
-    implementation("androidx.compose.material:material:1.6.0")
+    implementation("androidx.navigation:navigation-compose:2.8.2")
+    implementation("androidx.compose.material:material:1.7.3")
     implementation("com.google.accompanist:accompanist-drawablepainter:0.20.0")
     implementation(files("libs/fastjson-1.2.9.jar"))
     implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.google.android.material:material:1.12.0")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 //    testImplementation("junit:junit:4.13.2")
 //    androidTestImplementation("androidx.test.ext:junit:1.1.5")
