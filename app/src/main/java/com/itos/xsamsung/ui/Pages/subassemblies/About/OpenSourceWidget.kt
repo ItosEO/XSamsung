@@ -34,7 +34,7 @@ fun OpenSourceWidget() {
 
             label = "Github",
             onClick = {
-                OUI.openLink("https://github.com/ItosEO/XPlanForHyper")
+                OUI.openLink("https://github.com/ItosEO/XSamsung")
             }
         ),
         OriginCardItem(

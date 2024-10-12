@@ -31,23 +31,7 @@ import com.itos.xsamsung.ui.Pages.subassemblies.Opt.HDButton
 import com.itos.xsamsung.ui.Pages.subassemblies.Opt.OptButton
 import com.itos.xsamsung.ui.Pages.subassemblies.Opt.ProcessLimitButton
 import com.itos.xsamsung.ui.theme.OriginPlanTheme
-import com.itos.xsamsung.utils.OData
 
-
-fun SettingsDebug() {
-    MaterialAlertDialogBuilder(app)
-        .setTitle("调试")
-        .setMessage("这是调试功能,您确定要使用吗?")
-        .setPositiveButton("OK") { _, _ ->
-            val temp = app.ShizukuExec(OData.configdata.debug.toByteArray())
-            MaterialAlertDialogBuilder(app)
-                .setTitle("调试信息")
-                .setMessage(temp)
-                .setPositiveButton("OK", null)
-                .show()
-        }
-        .show()
-}
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -62,17 +46,7 @@ fun OptPage() {
                     Text(text = "优化")
                 },
                 actions = {
-//                IconButton(
-//                    onClick = {
-////                        SettingsDebug()
-//
-//                    }
-//                ) {
-//                    Icon(
-//                        imageVector = Icons.Outlined.Build,
-//                        contentDescription = "Debug"
-//                    )
-//                }
+
                     IconButton(
                         onClick = {
                             MaterialAlertDialogBuilder(app)
