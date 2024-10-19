@@ -26,10 +26,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.itos.xsamsung.XSamsung.Companion.app
-import com.itos.xsamsung.ui.Pages.subassemblies.Opt.ControlSystemUpdateButton
 import com.itos.xsamsung.ui.Pages.subassemblies.Opt.HDButton
 import com.itos.xsamsung.ui.Pages.subassemblies.Opt.OptButton
-import com.itos.xsamsung.ui.Pages.subassemblies.Opt.ProcessLimitButton
 import com.itos.xsamsung.ui.theme.OriginPlanTheme
 
 
@@ -80,12 +78,12 @@ fun OptPage() {
             ) {
                 Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                     OptButton()
-                    ProcessLimitButton()
+//                    ProcessLimitButton()
                 }
 
                 Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly){
                     HDButton()
-                    ControlSystemUpdateButton()
+//                    ControlSystemUpdateButton()
                 }
 //            Settings_opt()
 
@@ -100,9 +98,9 @@ fun OptPage() {
                 verticalArrangement = Arrangement.Center // 将子项垂直居中
             ) {
                 OptButton()
-                ProcessLimitButton()
+//                ProcessLimitButton()
 //            Settings_opt()
-//                HDButton()
+                HDButton()
 //                ControlSystemUpdateButton()
             }
         }
